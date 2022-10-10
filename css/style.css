@@ -1,0 +1,132 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	background: #ededed;
+}
+
+h1{
+margin: auto;
+}
+div{
+	margin: auto;
+	text-align: justify;
+}
+
+.topnav {
+	background-color: #2F4858;
+	overflow: hidden;
+	border-radius: 8px;
+	font-size: 0;
+	box-shadow: 0 2px 3px 0 rgba(0,0,0,.1);
+  }
+  .topnav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.topnav li {
+	float:left;
+	margin-left: 5%;
+	padding-left: 80px;
+}
+  .topnav a {
+	float:left;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+  }
+
+  .topnav a:hover {
+	border-bottom: 5px solid #92ACA3;
+	color: white;
+  }
+
+  .topnav a.active {
+	background-color: #92ACA3;
+	border-bottom: 5px solid #92ACA3;
+	color: white;
+  }
+img{
+	width: 50%;
+	border: 2px solid black;
+	padding: 10px;
+	display: block;
+	margin: 5px;
+}
+img:hover{
+	box-shadow: 2px 5px 5px 5px black;
+}
+
+.hero-img {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+	height: 25%;
+	top: 20px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+  .skip-to-content-link{
+	float:right;
+	text-decoration: none;
+	color: #2F4858;
+  }
+
+.hero-text {
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	right: 5%;
+	transform: translate(-50%, -50%);
+	color: black;
+  }
+  
+  .hero-text button {
+	border: none;
+	outline: 0;
+	display: inline-block;
+	padding: 10px 25px;
+	color: white;
+	background-color: black;
+	text-align: center;
+	cursor: pointer;
+  }
+  .hero-text button:hover {
+	background-color: #ddd;
+	color: black;
+  }
+
+  figcaption{
+	display: none;
+  }
+
+#banners{
+	display: block;
+	margin: auto;
+	align-items: center;
+}  
+.recipe-grid{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+}
+.events-grid{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+footer {
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: #2F4858;
+	color: white;
+	text-align: center;
+ }

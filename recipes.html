@@ -8,29 +8,35 @@
     <link rel="icon" type="images/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="images/png" sizes="16x16" href="images/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<header>
-	<nav>
-		<ul>
-			<li><a href="index.html">HOME</a></li>
-			<li><a href="#">EASY RECIPES</a></li>
-			<li><a href="events.html">EVENTS</a></li>
-			<li><a href="facts.html">FOODIE FACTS</a></li>
-		</ul>
-	</nav>
-</header>
+    <nav class="topnav">
+      <ul>
+        <li><a href="index.html" >HOME</a></li>
+        <li><a href="#" class="active">EASY RECIPES</a></li>
+        <li><a href="events.html">EVENTS</a></li>
+        <li><a href="facts.html">TIPS</a></li>
+        <li><a href="#footer">ABOUT US</a></li>
+      </ul>
+    </nav>
+    <a class="skip-to-content-link" href="#main">
+    Skip to content
+  </a>
+  </header>
 <h1>RECIPES ON THE GO!</h1>
 <main>
-    <ul>
+    <ul class="button-tags">
     		<li><a href="#">SNACKS</a></li>
 			<li><a href="#">DESSERTS</a></li>
 			<li><a href="#">DRINKS</a></li>
     </ul>
-    <p>Indian cuisine uses the whole palette of flavors—spicy, sour, sweet, and hot all at the same time—making it something that wants to jump off the plate.This food guide is a cheat sheet for cooking your next Indian meal.
+    <p id="main">Indian cuisine uses the whole palette of flavors—spicy, sour, sweet, and hot all at the same time—making it something that wants to jump off the plate.This food guide is a cheat sheet for cooking your next Indian meal.
     </p>
-
     <p> Simple.Fresh.Easy.</p>
+
+  <div class="recipe-grid">
   <figure>
   <a href="steps.html"><img src="images/rajma.jpg" alt="rajma chawal" style="width:50%"></a>
   <figcaption>COMFORT FOOD</figcaption>
@@ -57,6 +63,7 @@
   <img src="images/gujiya.jpg" alt="sweet gujiyas" style="width:50%">
   <figcaption>Festival sweets</figcaption>
  </figure>
+</div>
 
   <figure>
   <img src="images/samosa.jpg" alt="steaming samosa" style="width:50%">
@@ -93,7 +100,7 @@
 
 </main>
 
-<footer>
+<footer id="footer">
    Biblography:
 		Images,Unsplash
 </footer>

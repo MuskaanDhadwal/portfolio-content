@@ -8,50 +8,63 @@
     <link rel="icon" type="images/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="images/png" sizes="16x16" href="images/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <link rel="stylesheet" href="style.css">
- 
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <header>
-	<h1>PORTION PLAY</h1>
-	<nav>
+	<nav class="topnav">
 		<ul>
-			<li><a href="#">HOME</a></li>
-			<li><a href="recipes.html">EASY RECIPES</a></li>
+			<li><a href="#" class="active">HOME</a></li>
+			<li><a href="recipes.html" >EASY RECIPES</a></li>
 			<li><a href="events.html">EVENTS</a></li>
 			<li><a href="facts.html">TIPS</a></li>
-			<li><a href="#">ABOUT US</a></li>
+			<li><a href="#footer">ABOUT US</a></li>
 		</ul>
 	</nav>
+	<a class="skip-to-content-link" href="#main"> Skip to content</a>
 </header>
 <main>
-    <figure>
-    	<img src="images/banner.jpg" alt="Plate of fruits" style="width:50%;height:100%;">
+    <figure class="hero-img">
+    	<img src="images/banner.jpg" alt="Plate of fruits">
     	<figcaption>Fruits on a Plate</figcaption>
     </figure>
-	<h2>A COOKBOOK GUIDE FOR STUDENTS</h2>
-    <p> A perfectly curated guide of Indian dishes for students, by International students. As we understand the time and resource crunch that students go through, the recipes suggested are short,simple yet delicious.</p>
-   <h1>So,Whats Cooking?</h1>
+
+	<div class="hero-image">
+		<div class="hero-text">
+		  <h1 style="font-size:50px">PORTION PLAY</h1>
+		  <p>A student guide to 10-min recipes</p>
+		  <button href="#main">EXPLORE</button>
+		</div>
+	  </div> 
+
+	<br>
+	<h1>So,Whats Cooking?</h1>
+    <p id="main"> A perfectly curated guide of Indian dishes for students, by International students. As we understand the time and resource crunch that students go through, the recipes suggested are short,simple yet delicious.</p>
    <p><i>Understanding the cuisine</i>:Indian food has been prepared for more than 5000 years. Each region's food is influenced by its own customs, beliefs, and culture.Indian food has been influenced by a variety of cuisines, including Persian, Chinese, and Mongolian. The distinctive spice blending that consistently gives Indian cuisine its flavor and scent has remained a recurring theme over the ages.</p>
-  <figure>
-  <img src="images/bhel.jpg" alt="indian snack" style="width:50%">
+  
+   <div id="banners">
+   <figure id="column">
+  <img src="images/bhel.jpg" alt="indian snack">
   <figcaption>Indian Snacks</figcaption>
   </figure>
-  <figure>
-  <img src="images/paneer.jpg" alt="Indian tofu" style="width:50%">
-  <img src="images/puri.jpg" alt="Indian flatbread" style="width:50%">
+  <figure id="column">
+  <img src="images/paneer.jpg" alt="Indian tofu">
+  <img src="images/puri.jpg" alt="Indian flatbread">
   <figcaption>10 minute recipes</figcaption>
   </figure> 
+</div>
+
 <div id="facts">
 	<h2>ADVICE TO GET YOU STARTED</h2>
 	<p>Read about tips/tricks directly to manage time, shop groceries and save money on your next meal prep.</p>
 </div>
+
 <figure>
   <img src="images/banner2.jpg" alt=" green leaves" style="width:50%">
   <figcaption>nutrition</figcaption>
 </figure>
-<h3>Indian Diet Benefits</h3>
 
+<h3>Indian Diet Benefits</h3>
 <p>Let's examine the typical elements of an Indian diet:</p>
 	<ol>
 <li>High in a variety of fruits and vegetables, including spinach, aubergines, and mangoes.</li>
@@ -68,7 +81,7 @@
 	</p>
 </div>
 </main>
-<footer>
+<footer id ="footer">
 		Biblography:
 		Lowry, Brad. “A Guide To Indian Cuisine.” A Guide to Indian Cuisine, 2007, https://www.culinaryschools.org/international/indian-cuisine.php#:~:text=Indian%20cuisine%20dates%20back%20over,and%20Chinese%20cuisine%2C%20among%20others. 
 
