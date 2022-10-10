@@ -7,16 +7,12 @@ body {
 	background: #ededed;
 }
 
-h1{
-margin: auto;
-}
 div{
 	margin: auto;
-	text-align: justify;
 }
 
 .topnav {
-	background-color: #2F4858;
+	background-color: #284639;
 	overflow: hidden;
 	border-radius: 8px;
 	font-size: 0;
@@ -42,14 +38,14 @@ div{
   }
 
   .topnav a:hover {
-	border-bottom: 5px solid #92ACA3;
+	border-bottom: 5px solid #a6b9b3;
 	color: white;
   }
 
   .topnav a.active {
-	background-color: #92ACA3;
+	background-color: #a6b9b3;
 	border-bottom: 5px solid #92ACA3;
-	color: white;
+	color: black;
   }
 img{
 	width: 50%;
