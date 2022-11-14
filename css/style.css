@@ -161,7 +161,7 @@ form .news {
 
 .bg-img {
 	/* The image used */
-	background-image: url("/images/subscribe.jpg");
+	background-image: url("images/subscribe.jpg");
 	background-position: center;
 	background-repeat: repeat;
 	background-size: cover;
