@@ -1,34 +1,51 @@
 *{
-    box-sizing: border-box;
-}
+	box-sizing: border-box;
 
+}
 body {
-	font-family: 'Open Sans', sans-serif;
+	font-family: Lora, serif;
+	font-size: 16px;
 	background: #ededed;
+	display: grid;
+	grid-template-rows: auto auto 1fr;
 }
 
+header{
+	grid-row: 1 /span 1;
+}
+main{
+	grid-row: 2 /span 1;
+}
+h1{
+  font-family: Ubuntu, sans-serif;
+  font-size: 46px;
+  margin: auto;
+}
 div{
 	margin: auto;
+	text-align: justify;
 }
-
 .topnav {
-	background-color: #284639;
+	background-color: #2F4858;
 	overflow: hidden;
 	border-radius: 8px;
 	font-size: 0;
 	box-shadow: 0 2px 3px 0 rgba(0,0,0,.1);
   }
-  .topnav ul {
+.topnav ul {
     list-style: none;
     padding: 0;
     margin: 0;
+	display: flex;
+	flex-direction: column;
 }
 .topnav li {
 	float:left;
 	margin-left: 5%;
 	padding-left: 80px;
+	flex: 50%;
 }
-  .topnav a {
+.topnav a {
 	float:left;
 	color: white;
 	text-align: center;
@@ -37,18 +54,18 @@ div{
 	font-size: 17px;
   }
 
-  .topnav a:hover {
-	border-bottom: 5px solid #a6b9b3;
+.topnav a:hover {
+	border-bottom: 5px solid #92ACA3;
 	color: white;
   }
 
-  .topnav a.active {
-	background-color: #a6b9b3;
+.topnav a.active {
+	background-color: #92ACA3;
 	border-bottom: 5px solid #92ACA3;
-	color: black;
+	color: white;
   }
 img{
-	width: 50%;
+	width: 100%;
 	border: 2px solid black;
 	padding: 10px;
 	display: block;
@@ -58,31 +75,34 @@ img:hover{
 	box-shadow: 2px 5px 5px 5px black;
 }
 
-.hero-img {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-	height: 25%;
-	top: 20px;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	position: relative;
+.header-img{
+	width: 100%;
+	height: auto;
 }
-  .skip-to-content-link{
+.skip-to-content-link{
 	float:right;
 	text-decoration: none;
 	color: #2F4858;
   }
 
+/*hero section */
+.hero-img {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+	height: auto;
+	top: 20px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
 .hero-text {
 	text-align: center;
-	position: absolute;
-	top: 50%;
+	position: relative;
 	right: 5%;
-	transform: translate(-50%, -50%);
 	color: black;
+	z-index: 1;
   }
-  
-  .hero-text button {
+
+.hero-text button {
 	border: none;
 	outline: 0;
 	display: inline-block;
@@ -92,12 +112,13 @@ img:hover{
 	text-align: center;
 	cursor: pointer;
   }
-  .hero-text button:hover {
+
+.hero-text button:hover {
 	background-color: #ddd;
 	color: black;
   }
 
-  figcaption{
+figcaption{
 	display: none;
   }
 
@@ -105,24 +126,231 @@ img:hover{
 	display: block;
 	margin: auto;
 	align-items: center;
-}  
-.recipe-grid{
+}
+/* .recipe-grid{
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 	width: 70%;
-}
-.events-grid{
+} */
+/* .events-grid{
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 	width: 50%;
+} */
+aside{
+	width: 40%;
+	padding-left: 15px;
+	margin-left: 15px;
+	float: right;
+	font-style: italic;
+	background-color:#92ACA3;
+  }
+.aside img{
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
 }
-footer {
-	left: 0;
-	bottom: 0;
+
+/*Newsletter Form*/
+form .news {
+	border: 3px solid #f1f1f1;
+	font-family: Arial;
+  }
+
+.bg-img {
+	/* The image used */
+	background-image: url("/images/subscribe.jpg");
+	background-position: center;
+	background-repeat: repeat;
+	background-size: cover;
+	position: relative;
+
+}
+
+.newsletter-form {
+	padding: 60px;
+	color: black;
+	font-weight: bold;
+}
+.newsletter-form p{
+	background-color: white;
+	color: black;
+}
+
+input[type=text], input[type=submit] {
 	width: 100%;
+	padding: 12px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+
+input[type=checkbox] {
+	margin-top: 16px;
+}
+
+input[type=submit] {
 	background-color: #2F4858;
 	color: white;
-	text-align: center;
+	border: none;
+}
+
+input[type=submit]:hover {
+	opacity: 0.8;
+}
+
+/*footer*/
+footer{
+	grid-row: 4/ span 1;
+}
+
+.footer {
+	width: 100%;
+	background-color: #2F4858;
  }
+
+.footer .social{
+	margin-top: 25px;
+	text-align: center;
+	display: flex;
+    justify-content: space-evenly;
+	color: #ededed;
+}
+.footer .social a{
+
+	font-size: 24px;
+	color: inherit;
+	border: 1px solid #92ACA3;
+	width: 40px;
+	height: 40px;
+	line-height: 38px;
+	display: inline-block;
+	text-align: center;
+	border-radius: 50%;
+	margin: 0 20px;
+	opacity: 0.75;
+}
+
+.footer .social a:hover{
+	opacity: 0.9;
+}
+
+.footer .copyright {
+	margin-top: 15px;
+	text-align: center;
+	font-size: 15px;
+	color: beige;
+}
+
+.footer .feedback-form {
+	font-size: 15px;
+	color: beige;
+}
+.footer .feeback{
+	font-family: Lora, serif;
+	color: white;
+}
+ /*animation*/
+/* .floating {
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+} */
+
+@keyframes slide-in {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+  }
+
+  .box {
+    animation: slide-in 1000ms;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .box {
+        animation: none;
+    }
+  }
+
+/* @keyframes floating {
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(0, 15px); }
+    to   { transform: translate(0, -0px); }
+} */
+
+/*gallery*/
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 4px;
+  }
+.column {
+	display: flex;
+	flex-direction: column;
+	/* max-width: 100%; */
+  }
+
+.column img {
+	margin-top: 8px;
+	vertical-align: middle;
+	width: 100%;
+}
+
+/*events header*/
+.event-head{
+  padding: 5px;
+  font-size: 20px;
+  text-align: center;
+  background: white;
+}
+
+.event-head img{
+	width: 70vw;
+	height: auto;
+}
+
+/*recipe cards */
+/* .card {
+	color: white;
+	padding: 1rem;
+	height: 4rem;
+	width: 100%;
+}
+.recipe-grid{
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+} */
+
+.grid-container {
+    margin: 1em auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col{
+	flex : 100%;
+}
+
+.grid-item img{
+    padding: 1rem;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        object-position: 50% 50%;
+}
+#ref{
+	font-size: 50%;
+}

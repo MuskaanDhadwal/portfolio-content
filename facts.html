@@ -3,12 +3,22 @@
 <head >
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu|Lora">
 	<title>Foodie Facts</title>
 	<!-- <a href="http://www.freepik.com">Designed by starline / Freepik</a> favicon Attribution-->
     <link rel="icon" type="images/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="images/png" sizes="16x16" href="images/favicon-16x16.png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="manifest" href="/site.webmanifest">
 	<link rel="stylesheet" href="css/style.css">
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-GWX74FZTWY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-GWX74FZTWY');
+</script>
+
 </head>
 <body>
 	<header>
@@ -17,13 +27,14 @@
 				<li><a href="index.html" >HOME</a></li>
 				<li><a href="recipes.html" >EASY RECIPES</a></li>
 				<li><a href="events.html">EVENTS</a></li>
-				<li><a href="#" class="active">TIPS</a></li>
+				<li><a href="#"class="active">TIPS</a></li>
 				<li><a href="#footer">ABOUT US</a></li>
 			</ul>
 		</nav>
 		<a class="skip-to-content-link" href="#main">
 	  Skip to content
 	</a>
+	<br>
 	</header>
 <main>
 	<h1>How to buy, preserve , and prepare meals in 2022.</h1>
@@ -46,24 +57,44 @@
    <p>A fantastic location to look is at farmers' markets.Unusable onions can still be used if they aren't too old. However, it won't be as strong and zingy. Just be aware that the finished product won't have as much flavor. You might in this case omit the recipe's specified amount of onion and add a bit extra. </p>
 
    <h1>Master Portion Sizing</h1>
-   <p>You may be able to save yourself some time during the week by dividing large recipes into single servings that are ready to go. You may be prevented from overeating by it as well. Place each portion in a glass jar or resealable plastic bag. Additionally, you can put soups, stews, and broths into silicone muffin tins, freeze them, then place the solidified pieces of food into plastic bags.</p>
+  <p>You may be able to save yourself some time during the week by dividing large recipes into single servings that are ready to go. You may be prevented from overeating by it as well. Place each portion in a glass jar or resealable plastic bag. Additionally, you can put soups, stews, and broths into silicone muffin tins, freeze them, then place the solidified pieces of food into plastic bags.</p>
+<h2>Biblography:</h2>
+<ol>
+<li><cite> “Tips and Tricks for Advance Meal Prep.” WebMD, WebMD, https://www.webmd.com/food-recipes/ss/slideshow-advanced-meal-prep-tips.</cite></li>
+<li></cite>Images,Unsplash</cite></li> 
+</ol>
 
-   <figure>
-	<img src="images/grocery.jpg" alt="veggies in bags">
+<figure>
+	<img src="images/grocery.jpg" alt="veggies in bags" style="width:50%;height:auto;">
 	<figcaption>Groceries in bag</figcaption>
 </figure>
 
-<div id="subscribe">
-<p>Like Our Recipes? Subscribe to our Newsletter.</p>
-</div>
+<div class="bg-img">
+	<form action="/action_page.php" class="news">
+	  <div class="newsletter-form">
+		<h2>Subscribe to our Newsletter</h2>
+		<p>If you would like to share your version of the recipes, go ahead and connect with us !</p>
+		<input type="text" placeholder="Name" name="name" required>
+		<input type="text" placeholder="Email address" name="mail" required>
+		<label style="left:0;"><input type="checkbox" checked="checked" name="subscribe">Daily_Newsletter</label>
+		<input type="submit" value="Subscribe">
+	  </div>
+	</form>
+  </div>
 
 </main>
 
-<footer id="footer">
-	Biblography:
-		“Tips and Tricks for Advance Meal Prep.” WebMD, WebMD, https://www.webmd.com/food-recipes/ss/slideshow-advanced-meal-prep-tips.
 
-		Images,Unsplash
+<footer class="footer">
+		<div class="social">
+			<a href="#"><i class="fab fa-instagram"></i></a>
+			<a href="#"><i class="fab fa-snapchat"></i></a>
+			<a href="#"><i class="fab fa-facebook"></i></a>
+			<a href="#"><i class="fab fa-twitter"></i></a>
+		</div>
+		<p class="copyright">
+			SI 539 Assignment
+		</p>
 </footer>
 </body>
 </html>
