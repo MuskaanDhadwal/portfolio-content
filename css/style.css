@@ -353,3 +353,8 @@ footer{
 #ref{
 	font-size: 50%;
 }
+
+.social h1{
+	visibility: hidden;
+}
+
