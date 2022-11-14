@@ -24,6 +24,7 @@ h1{
 div{
 	margin: auto;
 	text-align: justify;
+	text-justify: inter-word;
 }
 .topnav {
 	background-color: #2F4858;
