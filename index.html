@@ -2,128 +2,178 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu|Lora">
-	<title>Portion Play - Blog</title>
-	<!-- <a href="http://www.freepik.com">Designed by starline / Freepik</a> favicon Attribution-->
+	<meta name="viewport" content="width=device-width">
+	<title>HOME</title>
+	<!-- favicon -->
+	<link rel="icon" type="images/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="images/png" sizes="16x16" href="images/favicon-16x16.png">
+
+    <!-- link to css stylesheet -->
+	<link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+	<!-- link to javascript -->
+	<script src="js/script.js"></script>
+
+    <!-- fontawesoem icons -->
     <link rel="icon" type="images/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="images/png" sizes="16x16" href="images/favicon-16x16.png">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="manifest" href="/site.webmanifest">
-    <link rel="stylesheet" href="css/style.css">
+
+    <!-- google analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-GWX74FZTWY"></script>
     <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-GWX74FZTWY');
-</script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'G-GWX74FZTWY');
+	</script>
+
+	<!-- google fonts -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
 </head>
 <body>
-<div class="container">
-<header>
-	<nav class="topnav">
-		<ul>
-			<li><a href="#" class="active">HOME</a></li>
-			<li><a href="recipes.html" >EASY RECIPES</a></li>
-			<li><a href="events.html">EVENTS</a></li>
-			<li><a href="facts.html">TIPS</a></li>
-			<li><a href="#footer">ABOUT US</a></li>
-		</ul>
-	</nav>
-	<a class="skip-to-content-link" href="#main"> Skip to content</a>
-	<br>
-</header>
-<main>
-    <figure class="hero-img">
-    	<img src="images/banner.jpg" alt="Plate of fruits">
-    	<figcaption>Fruits on a Plate</figcaption>
-    </figure>
-	<!-- <div class="floating"
-	style="height: 50px; width: 50px; background: rgb(255, 3, 3);">
-    </div> -->
+	<div class="loader">
+		<div class="ring"></div>
+	 </div>
 
-		<div class="hero-text">
-		  <h1 id="text-hero">PORTION PLAY</h1>
-		  <p>A student guide to 10-min recipes</p>
-		  <button href="#main">EXPLORE</button>
-		</div>
-	<br>
-	<h1>So,Whats Cooking?</h1>
-    <p id="main"> A perfectly curated guide of Indian dishes for students, by International students. As we understand the time and resource crunch that students go through, the recipes suggested are short,simple yet delicious.</p>
-   <p><i>Understanding the cuisine</i>:Indian food has been prepared for more than 5000 years. Each region's food is influenced by its own customs, beliefs, and culture.Indian food has been influenced by a variety of cuisines, including Persian, Chinese, and Mongolian. The distinctive spice blending that consistently gives Indian cuisine its flavor and scent has remained a recurring theme over the ages.</p>
+	<div class="container">
+		<header>
+			<nav class="topnav">
+				<div class="sitename">
+					PortionPlay
+				</div>
+				<input type="checkbox" id="click">
+		         <label for="click" class="menu-btn"><a id="labeltext">Btn</a>
+		         <i class="fas fa-bars"></i>
+		         </label>
+				<ul>
+					<li><a href="#" class="active">HOME</a></li>
+					<li><a href="recipe.html">RECIPES</a></li>
+					<li><a href="events.html">EVENTS</a></li>
+					<li><a href="facts.html">FACTS</a></li>
+				</ul>
+			</nav>
+			<div class="skip-to-content-link"><a href="#main"> Skip to content</a></div>
+		</header>
+		<main id="main">
+			<br>
+			<div class="hero-img">
+				
+				<img src="images/banner.jpg" alt="Plate of fruits">	
+				<figure><figcaption class="fig">Fruits on a Plate</figcaption></figure>
+			</div>
+			<div class="hero-text">
+				  <h1 id="text-hero">PORTION PLAY</h1><br>
+				  <p>A student guide to 10-min recipes</p><br>
+				  <button>EXPLORE</button>
+			</div>
+			<div>
+				<h1 id="heading-content">So, Whats Cooking?</h1>
+			</div>
+			<div id="gallery">
+				<div>
+					
+					<img src="images/bhel.jpg" alt="indian snack on plate">
+					<br>
+					<p>A perfectly curated guide of Indian dishes for students, by International students. As we understand the time and resource crunch that students go through, the recipes suggested are short,simple yet delicious.
+					</p>
+					<figure><figcaption class="fig">Indian Snacks</figcaption></figure>
+				</div>
 
-   <div id="banners">
-   <figure id="column">
-  <img src="images/bhel.jpg" alt="indian snack">
-  <figcaption>Indian Snacks</figcaption>
-  </figure>
-  <figure id="column">
-  <img src="images/paneer.jpg" alt="Indian tofu">
-  <img src="images/puri.jpg" alt="Indian flatbread">
-  <figcaption>10 minute recipes</figcaption>
-  </figure>
-</div>
+				<div>
+					
+					<img src="images/paneer.jpg" alt="Indian tofu">
+					<br>
+					<p id="explore"><i> Understanding the cuisine</i>:Indian food has been prepared for more than 5000 years. Each region's food is influenced by its own customs, beliefs, and culture.Indian food has been influenced by a variety of cuisines, including Persian, Chinese, and Mongolian. The distinctive spice blending that consistently gives Indian cuisine its flavor and scent has remained a recurring theme over the ages.
+					</p>
+					<figure><figcaption class="fig">Uderstanding indian products</figcaption></figure>
+				</div>
+				<div>
+					
+					<img src="images/puri.jpg" alt="Indian flatbread">
+					<p>Let's examine the typical elements of an Indian diet:</p>
+						<ol>
+							<li>High in a variety of fruits and vegetables, including spinach, aubergines, and mangoes.</li>
+							<li>High in a number of herbs and spices, including coriander and ginger.</li>
+							<li>Minimal saturated fat.</li>
+							<li>A lot of fiber due to large amounts of vegetables used.</li>	
+						</ol>
+						<figure><figcaption class="fig">10 minute recipes</figcaption></figure>
+				</div>
+				<div>
+					
+					<img src="images/banner2.jpg" alt=" green leaves">
+					<p> Portion Play is a one stop destination for all sorts of Indian home cooked meal guides and recipes, drawing inspiration from traditions passed on from centuries on. Portion Play as a blog is here to help you cook delicious meals with less stress and more joy. The site offers recipes and cooking advice to International students to help them have "piece of home" where-ever they might be. This is your turn to become the "Master-chef" of your kitchen.
+					</p>
+					 <figure><figcaption class="fig">nutrition</figcaption> </figure>
+				</div>
+			</div>
 
-<div id="facts">
-	<h2>ADVICE TO GET YOU STARTED</h2>
-	<p>Read about tips/tricks directly to manage time, shop groceries and save money on your next meal prep.</p>
-</div>
+			<button type="button" class="collapse" style="color:white;">Click For Biblography</button>
+			<div class="text">
+				<ul>
+					<li><cite>Lowry, Brad. “A Guide To Indian Cuisine.” A Guide to Indian Cuisine, 2007</cite></li>
+					<li><cite>The Health Benefits of an Indian Diet | Realbuzz.com. https://www.realbuzz.com/articles-interests/nutrition/article/the-health-benefits-of-an-indian-diet/.</cite></li>
+					<li><cite>Images,Unsplash</cite></li>
+				</ul>
+			</div>
 
-<figure>
-  <img src="images/banner2.jpg" alt=" green leaves">
-  <figcaption>nutrition</figcaption>
-</figure>
+		</main>
 
-<h3>Indian Diet Benefits</h3>
-<p>Let's examine the typical elements of an Indian diet:</p>
-	<ol>
-<li>High in a variety of fruits and vegetables, including spinach, aubergines, and mangoes.</li>
-<li>High in a number of herbs and spices, including coriander and ginger.</li>
-<li>Minimal saturated fat.</li>
-<li>A lot of fiber due to large amounts of vegetables used.</li>
-</ol>
-<p>All these factors together help build a healthy immune system and metabolism </p>
+		<aside class="box">
+			<figure>
+			<img src="images/header-img.jpeg" alt="author in muffler and coat" style="width:90%">
+			<p><strong> About The Author:</strong> Muskaan is a free spirited foodie who loves to cook ! While living as an international student herself, she has made this simple recipe guide for others to refer as well	
+			</p>
+			<figcaption class="fig">About the author</figcaption></figure>
+		</aside>
 
-<aside class="box">
-	<img src="/images/header-img.jpeg" alt="author in muffler and coat">
-	<p><strong> About The Author:</strong> Muskaan is a free spirited foodie who loves to cook ! While living as an international student herself, she has made this simple recipe guide for others to refer as well</p>
-</aside>
-
-<div id="about">
-	<h2>About Us</h2>
-	<p>
-		Portion Play is a one stop destination for all sorts of Indian home cooked meal guides and recipes, drawing inspiration from traditions passed on from centuries on. Portion Play as a blog is here to help you cook delicious meals with less stress and more joy. The site offers recipes and cooking advice to International students to help them have "piece of home" where-ever they might be. This is your turn to become the "Master-chef" of your kitchen.
-	</p>
-</div>
-<div id="ref">
-<h2>Biblography:</h2>
-<ul>
-<li><cite>Lowry, Brad. “A Guide To Indian Cuisine.” A Guide to Indian Cuisine, 2007</cite></li>
-<li><cite>The Health Benefits of an Indian Diet | Realbuzz.com. https://www.realbuzz.com/articles-interests/nutrition/article/the-health-benefits-of-an-indian-diet/.</cite></li>
-<li><cite>Images,Unsplash</cite></li>
-</ul>
-</div>
-</main>
-<br>
-
-<footer class ="footer">
-		<form action="https://formspree.io/f/xayklavg" method="POST" class="feedback">
-			<label>Your email:<input type="email" name="email"></label>
-			<label>Your message:<textarea name="message"></textarea></label>
-			  <!-- your other form fields go here -->
-			  <button type="submit">Send</button>
+		<footer class="footer">
+			<form action="https://formspree.io/f/xayklavg" method="POST" class="feedback">
+						<label style = "color: white;">Your email:<input type="email" name="email"></label>
+						<label style = "color: white;" for="textarea">Your message:</label><textarea name="message" id="textarea"></textarea>
+						<!-- your other form fields go here -->
+						<button type="submit">Send</button>
 			</form>
-	<div class="social">
-		<a href="#"><i class="fab fa-instagram"></i></a>
-		<a href="#"><i class="fab fa-snapchat"></i></a>
-		<a href="#"><i class="fab fa-facebook"></i></a>
-		<a href="#"><i class="fab fa-twitter"></i></a>
-	</div>
-	<p class="copyright">
-		SI 539 Assignment
-	</p>
-</footer>
+			<div class="social">
+				<a href="https://www.instagram.com/" aria-label="insta"><i class="fab fa-instagram"></i><h1>instagram</h1></a>
+				<a href="https://www.snapchat.com/" aria-label="snap"><i class="fab fa-snapchat"></i><h1>snapchat</h1></a>
+				<a href="https://www.facebook.com/" aria-label="facebook"><i class="fab fa-facebook"></i><h1>facebook</h1></a>
+				<a href="https://twitter.com/" aria-label="tweet"><i class="fab fa-twitter"></i><h1>twitter</h1></a>
+			</div>
+			<p class="copyright">
+				SI 539 Assignment
+			</p>
+		</footer>
 </div>
+
+<script>
+	var btn = document
+.getElementsByClassName("collapse");
+
+btn[0].addEventListener("click", function () {
+this.classList.toggle("active");
+var content = this.nextElementSibling;
+if (content.style.display === "block") {
+    content.style.display = "none";
+} else {
+    content.style.display = "block";
+}
+});
+</script>
+
+<script>
+	const loader = document.querySelector(".loader");
+         window.onload = function(){
+           setTimeout(function(){
+             loader.style.opacity = "0";
+             setTimeout(function(){
+               loader.style.display = "none";
+             }, 500);
+           },1500);
+         }
+</script>
 </body>
 </html>

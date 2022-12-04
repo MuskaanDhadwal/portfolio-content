@@ -2,119 +2,213 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu|Lora">
-	<title>Events</title>
-	<!-- <a href="http://www.freepik.com">Designed by starline / Freepik</a> favicon Attribution-->
-    <link rel="icon" type="images/png" sizes="32x32" href="images/favicon-32x32.png">
-    <link rel="icon" type="images/png" sizes="16x16" href="images/favicon-16x16.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="manifest" href="/site.webmanifest">
+	<meta name="viewport" content="width=device-width">
+	<title>EVENTS</title>
+	<!-- favicon -->
+	<link rel="icon" type="images/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="images/png" sizes="16x16" href="images/favicon-16x16.png">	
+    <!-- link to css stylesheet -->
+	<link rel="stylesheet" href="css/html5reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GWX74FZTWY"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-GWX74FZTWY');
-</script>
+	
+     <!-- fontawesoem icons -->
+    <link rel="icon" type="images/png" sizes="32x32" href="images/favicon-32x32.png">
+	    <link rel="icon" type="images/png" sizes="16x16" href="images/favicon-16x16.png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- google analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-GWX74FZTWY"></script>
+    <script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'G-GWX74FZTWY');
+	</script>
+
+	<!-- google fonts -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
 </head>
 <body>
-  <header>
-    <nav class="topnav">
-      <ul>
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="recipes.html" >EASY RECIPES</a></li>
-        <li><a href="#" class="active">EVENTS</a></li>
-        <li><a href="facts.html">TIPS</a></li>
-        <li><a href="#footer">ABOUT US</a></li>
-      </ul>
-    </nav>
-    <a class="skip-to-content-link" href="#main">Skip to content</a>
-  <br>
-  </header>
-<main>
-  <div class="event-head">
-    <img src="/images/events.jpg">
-    <h2>Gastronomical experience</h2>
-  </div>
- <p id="event-desc"> Since we regularly add new events, come join us us a FOOD-ADVENTURE! Go to our listed social accounts for the latest information. Please feel free to email us with your requests or suggestions if you have a special event planned. Join us on the 10th this Friday,from 5-8 p.m., to support your favorite regional food carts and trucks!</p>
-  <!-- <h2>FOODIE CALLING FOODIE!!</h2> -->
-  <p id="main">Drinks that are cooling and revitalizing, such as lemonade, cucumber water, and coconut water, are rich in minerals and antioxidants that assist our bodies replenish lost nutrients.The Indian drink Lassi, which is made with curd as its main component, not only helps to keep the body hydrated but also aids in promoting easy digestion because curd includes lactobacilli, good bacteria that are known to lubricate the intestines.<br>
-  Join celebrity chef Vikas Khanna's class today to learn more about Lassi and other Traditional drinks
-  Making healthy eating choices can help us live longer, be healthier, and be more productive. However, a healthy diet also helps us feel good, and who doesn't desire that? Here are some publications to aid you in incorporating healthy, delectable cuisine into your (new) daily routine, whether you're searching for particular nutritional guidance or simply want to generally break the snack cycle and eat healthier at home.
-  <br>Its the Trick or Treat season!!Learn everything from how to make skull-shaped cookies to mummified sausages and become part of the community.</p>
+	<div class="container">
+		<header>
+			<nav class="topnav">
+					<div class="sitename">
+						PortionPlay
+					</div>
+					<input type="checkbox" id="click">
+			         <label for="click" class="menu-btn"><a id="labeltext">Btn</a>
+			         <i class="fas fa-bars"></i>
+			         </label>
+					<ul>
+						<li><a href="index.html">HOME</a></li>
+						<li><a href="recipe.html">RECIPES</a></li>
+						<li><a href="#" class="active">EVENTS</a></li>
+						<li><a href="facts.html">FACTS</a></li>
+					</ul>
+				</nav>
+				<div class="skip-to-content-link"><a href="#main"> Skip to content</a></div>
+		</header>
+			<main>
+				<div class="event-head">
+					<figure>
+					<img src="images/events.jpg" alt="wine and confetti">
+					<figcaption class="fig">header image</figcaption></figure>
+					<h1>Gastronomical experience</h1>
+				  </div>
+				  <p id="event-desc"> Since we regularly add new events, come join us us a FOOD-ADVENTURE! Go to our listed social accounts for the latest information. Please feel free to email us with your requests or suggestions if you have a special event planned. Join us on the 10th this Friday,from 5-8 p.m., to support your favorite regional food carts and trucks!</p>
+				  <p id="main">Drinks that are cooling and revitalizing, such as lemonade, cucumber water, and coconut water, are rich in minerals and antioxidants that assist our bodies replenish lost nutrients.The Indian drink Lassi, which is made with curd as its main component, not only helps to keep the body hydrated but also aids in promoting easy digestion because curd includes lactobacilli, good bacteria that are known to lubricate the intestines.<br>
+					Join celebrity chef Vikas Khanna's class today to learn more about Lassi and other Traditional drinks
+					Making healthy eating choices can help us live longer, be healthier, and be more productive. However, a healthy diet also helps us feel good, and who doesn't desire that? Here are some publications to aid you in incorporating healthy, delectable cuisine into your (new) daily routine, whether you're searching for particular nutritional guidance or simply want to generally break the snack cycle and eat healthier at home.
+					<br>Its the Trick or Treat season!!Learn everything from how to make skull-shaped cookies to mummified sausages and become part of the community.</p> 
+				<div id="events">
+				  <div>
+					<figure>
+					<img class='food' src="images/food-truck.jpg" alt="food truck poster">
+					<figcaption class="info">Food Truck festival<br>
+					Date: Aug 10th - Aug 11th, 2022<br>
+					Time: 7pm - 12am<br>
+					Location: Kerrytown</figcaption></figure>
+				  </div>
+				  <div>
+					<figure>
+					<img class='food' src="images/nutrition.jpg" alt="salad bowl">
+					<figcaption class="info">Learn Nutrition Classes<br>
+					Date: Sep 2nd, 2022<br>
+					Time: 11am - 1pm<br>
+					Location: Northquad 2521</figcaption></figure>
+				  </div>
+				  <div>
+					<figure>
+					<img class='food' src="images/buffet.jpg" alt="indian buffet">
+					<figcaption class="info">Pre-Diwali Celebration<br>
+					Date: Oct 14th, 2022<br>
+					Time: 8pm - 12am<br>
+					Location: Union</figcaption></figure>
+				  </div>
+				  <div>
+					<figure>
+					<img class='food' src="images/sweets.jpg" alt="sweets on plate">
+					<figcaption class="info">Iry Indian Sweets Event<br>
+					Date: Oct 20th, 2022<br>
+					Time: 11am - 12pm<br>
+					Location: Diag</figcaption></figure>
+				  </div>
+				  <!-- <img class='food'src="images/halloween_party.png" alt="Halloween party"> -->
+				  <div>
+					<figure>
+					<img class='food' src="images/fishstall.jpg" alt="fish and chips food stall">
+					<figcaption class="info">Classic Fish And Chips Stall<br>
+					Date: Oct 29th - Oct 30th, 2022<br>
+					Time: 7pm - 12am<br>
+					Location: Kerrytown</figcaption></figure>
+				  </div>
+				  <div>
+					<figure>
+					<img class='food' src="images/barfi.jpg" alt="indian barfi on plate">
+					<figcaption class="info">Punjabi Festival Celebration<br>
+					Date: Nov 2nd, 2022<br>
+					Time: 6pm - 8pm<br>
+					Location: Union</figcaption></figure>
+				  </div>
+				  <div>
+					<figure>
+					<img class='food' src="images/neontag.jpg" alt="neon hoarding">
+					<figcaption class="info">Restaurant Opening<br>
+					Date: Nov 12th, 2022<br>
+					Time: 10am - 12pm<br>
+					Location: Kerrytown</figcaption></figure>
+				  </div>
+				  <div>
+					<figure>
+					<img class='food' src="images/thanksgiving.jpg" alt="traditions followed">
+					<figcaption class="info">Thanksgiving Traditions<br>
+					Date: Nov 24th, 2022<br>
+					Time: 11am - 2pm<br>
+					Location: Bursley Hall</figcaption></figure>
+				  </div>
+				  <div>
+					<figure>
+					<img class='food' src="images/quotes.jpg" alt="quotes on event">
+					<figcaption class="info">Free Stickers Giveaway<br>
+					Date: Nov 26th, 2022<br>
+					Time: 12pm - 1:30pm<br>
+					Location: Angell Hall</figcaption></figure>
+				  </div>
+				  <div>
+					<figure>
+					<img class='food' src="images/christmas.jpg" alt="cookies for festival">
+					<figcaption class="info">Christmas Cookies Icing Event<br>
+					Date: Dec 3rd, 2022<br>
+					Time: 6pm - 8pm<br>
+					Location: North-Quad 1125</figcaption></figure>
+				  </div>
+				  <div>
+					<figure>
+					<img class='food' src="images/cookies.jpg" alt="halloween decoration food">
+					<figcaption class="info">Halloween Cookies Discount<br>
+					Date: Oct 31st, 2022<br>
+					Time: 7pm - 12am<br>
+					Location: Angell Hall</figcaption></figure>
+				  </div>
+				  <div>
+					<figure>
+					<img class='food' src="images/baking.jpg" alt="cookie baking">
+					<figcaption class="info">Baking Class<br>
+					Date: Dec 15th, 2022<br>
+					Time: 4pm - 6pm<br>
+					Location: League</figcaption></figure>
+				  </div>
+				  <div>
+					<figure>
+					<img class='food' src="images/pumpkin.jpg" alt="halloween event">
+					<figcaption class="info">Pumpkin Carving Event<br>
+					Date: Oct 14th, 2022<br>
+					Time: 7pm - 12am<br>
+					Location: Kerrytown</figcaption></figure>
+				  </div>
+				  <div>
+					<figure>
+					<img class='food' src="images/wine-tasting.jpg" alt="vineyard visit">
+					<figcaption class="info">Wine Tasting Event<br>
+					Date: Dec 20th, 2022<br>
+					Time: 7pm - 1am<br>
+					Location: Downtown</figcaption></figure>
+				  </div>
+				</div>
+		  
+			<!-- <h2>Bibliography</h2>
+			  <ol id="ref">
+			      <li><cite>Sarin, Deeksha. “Feeling Dehydrated? Beat the Heat with This 3-Ingredient Rose Lassi.” NDTV Food, 4 Apr. 2019, https://food.ndtv.com/food-drinks/feeling-dehydrated-beat-the-heat-with-this-3-ingredient-rose-lassi-2017837.</cite></li>
+			      <li><cite> “Eat Well, Feel Good.” Penguin Books Australia, https://www.penguin.com.au/books/lists/450-eat-well-feel-good.</cite></li>
+			      <li><cite>Denise,Litchfield."Tapioca Pearls Tea GIF",2022,Giphy.</cite></li>
+			      <li><cite> Images,Unsplash.</cite></li>
+			      <li><cite>Images, Pexel</cite></li>
+               </ol> -->
 
-  <iframe src="https://giphy.com/embed/2JFn8rlHowXgd4c7Zu" width="270" height="480" class="giphy-embed" allowFullScreen style="display:flex; flex-direction:column; width: 100%;"></iframe>
-  <p><a href="https://giphy.com/gifs/bubble-tea-insta-story-1080x1920-animated-2JFn8rlHowXgd4c7Zu"> Don't Forget to Hydrate Yourself !</a></p>
 
-  <div class="row">
-    <figure class="column">
-      <img src="images/food-truck.jpg" alt="food truck poster">
-      <!--<a href="https://www.freepik.com/free-vector/urban-street-food-vector-illustrations-poster-banner-cafe-car-lunch-street-event-illustration_11059497.htm#query=food%20event&position=3&from_view=search">Image by macrovector</a> on Freepik-->
-      <img src="images/nutrition.jpg" alt="salad bowl">
-      <!--<a href="http://www.freepik.com">Designed by macrovector / Freepik</a>-->
-      <img src="images/buffet.jpg" alt="indian buffet">
-      <img src="images/barfi.jpg" alt="indian barfi on plate">
-      <img src="/images/hotchocolate.jpg" alt="hot chocolate on cup">
-      <figcaption>Food Truck Events</figcaption>
-    </figure>
+			 <div class="bg-img" >
+			    <form action="/action_page.php">
+			      <div class="newsletter-form" >
+			        <h2 id="aboutus">Subscribe to our Newsletter</h2>
+			        <p style="background-color: white;">If you would like to share your version of the recipes, go ahead and connect with us !</p>
+			        <label style="background-color: white;" for="name">Name:</label><input type="text"  name="name"  id = "name" required><br>
+			        <label style="background-color: white;" for="mail">Mail:</label><input type="text" name="mail" id = "mail" required><br>
+			        <input type="submit" value="Subscribe">
+			      </div>
+			  </form>
+			</div>
 
-    <figure class="column">
-      <img src="images/cookies.jpg" alt="halloween cookies">
-       <!-- <a href="https://www.freepik.com/free-vector/hand-drawn-dia-de-muertos-food-collection_19002369.htm#query=food%20event&position=26&from_view=search">Image by pikisuperstar</a> on Freepik-->
-       <img src="images/baking.jpg" alt=" cookie baking">
-      <img src="images/pumpkin.jpg" alt="pumpkin carving">
-      <img src="images/sweets.jpg" alt="sweets on plate">
-      <img src="images/thanksgiving.jpg" alt="thanksgiving tradition">
-      <figcaption>Traditions</figcaption>
-    </figure>
-
-    <figure class="column">
-      <img src="images/quotes.jpg" alt="quotes on event">
-      <!--<a href="https://www.freepik.com/free-vector/cute-pasta-doodle-template-vector-with-food-quote-social-media-story-collection_28428482.htm#query=foodies&position=4&from_view=search">Image by rawpixel.com</a> on Freepik-->
-      <img src="images/christmas.jpg" alt="christmas cookies">
-      <img src="images/fishstall.jpg" alt="fish and chips food stall">
-      <img src="images/wine-tasting.jpg" alt="wine tastin event">
-      <img src="images/neontag.jpg" alt="neon hoarding">
-      <figcaption>Food Truck Events</figcaption>
-    </figure>
-  </div>
-
-  <h2>Bibliography</h2>
-  <ol id="ref">
-      <li><cite>Sarin, Deeksha. “Feeling Dehydrated? Beat the Heat with This 3-Ingredient Rose Lassi.” NDTV Food, 4 Apr. 2019, https://food.ndtv.com/food-drinks/feeling-dehydrated-beat-the-heat-with-this-3-ingredient-rose-lassi-2017837.</cite></li>
-      <li><cite> “Eat Well, Feel Good.” Penguin Books Australia, https://www.penguin.com.au/books/lists/450-eat-well-feel-good.</cite></li>
-      <li><cite>Denise,Litchfield."Tapioca Pearls Tea GIF",2022,Giphy.</cite></li>
-      <li><cite> Images,Unsplash.</cite></li>
-      <li><cite>Images, Pexel</cite></li>
-    </ol>
-
-
-  <div class="bg-img" >
-    <form action="/action_page.php">
-      <div class="newsletter-form">
-        <h2>Subscribe to our Newsletter</h2>
-        <p>If you would like to share your version of the recipes, go ahead and connect with us !</p>
-        <input type="text" placeholder="Name" name="name" required>
-        <input type="text" placeholder="Email address" name="mail" required>
-        <label style="left:0;"><input type="checkbox" checked="checked" name="subscribe">Daily_Newsletter</label>
-        <input type="submit" value="Subscribe">
-      </div>
-  </form>
-  </div>
-</main>
-
+		</main>
 <footer class="footer">
-  <div class="social">
-    <a href="#"><i class="fab fa-instagram"></i></a>
-    <a href="#"><i class="fab fa-snapchat"></i></a>
-    <a href="#"><i class="fab fa-facebook"></i></a>
-    <a href="#"><i class="fab fa-twitter"></i></a>
-  </div>
-  <p class="copyright">
-    SI 539 Assignment
-  </p>
-</footer >
+	<div class="social">
+			<a href="#" aria-label="insta"><i class="fab fa-instagram"></i><h1>instagram</h1></a>
+			<a href="#" aria-label="snap"><i class="fab fa-snapchat"></i><h1>snapchat</h1></a>
+			<a href="#" aria-label="facebook"><i class="fab fa-facebook"></i><h1>facebook</h1></a>
+			<a href="#" aria-label="tweet"><i class="fab fa-twitter"></i><h1>twitter</h1></a>
+	</div>
+	 <p class="copyright"> SI 539 Assignment</p>
+</footer>
+</div>
 </body>
 </html>
