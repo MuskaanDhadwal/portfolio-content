@@ -183,6 +183,7 @@ input[type="checkbox"]{
  #click:checked ~ ul{
     left: 0;
     overflow: hidden;
+    z-index: 9;
  }
  .topnav ul li{
     width: 100%;
