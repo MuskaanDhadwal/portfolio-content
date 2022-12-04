@@ -786,3 +786,8 @@ cite{
     transform: rotate(360deg);
   }
 }
+
+.social h1{
+	visibility: hidden;
+}
+
